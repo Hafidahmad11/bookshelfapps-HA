@@ -1,0 +1,216 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,300;0,400;0,500;1,400&family=Quicksand:wght@500&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  font-family: "Fira Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header {
+  padding: 16px;
+  color: white;
+}
+h1,
+h2 {
+  text-align: center;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.wrapper .container {
+  width: 80%;
+  border-radius: 8px;
+  margin: 16px;
+  background: #f8f9fa;
+  padding: 16px;
+  flex-grow: 1;
+  height: fit-content;
+}
+.bookshelf {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.book {
+  width: 48%;
+  border-radius: 16px;
+  margin-top: 16px;
+  padding: 12px 24px 12px 24px;
+  background: white;
+  display: flex;
+  flex-direction: column;
+}
+.book h3 {
+  margin-bottom: unset;
+}
+.book p {
+  margin: 5px 0;
+}
+.form {
+  display: flex;
+  padding: 16px;
+  flex-direction: column;
+  height: fit-content;
+  border-radius: 16px;
+}
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+.form-check {
+  display: flex;
+  align-items: center;
+}
+.form-group label {
+  margin-bottom: 4px;
+  font-size: 18px;
+  font-weight: lighter;
+}
+input[type="text"],
+input[type="date"],
+input[type="number"] {
+  font-family: "Fira Sans", sans-serif;
+  background: #e4e4e4;
+  border: 2px solid #d21e2b;
+  border-radius: 8px;
+  padding: 16px;
+  box-sizing: border-box;
+  margin-bottom: 8px;
+  font-size: 18px;
+}
+button {
+  width: fit-content;
+  padding: 12px 24px;
+  background-color: #d21e2b;
+  color: white;
+  font-size: 18px;
+  margin-top: auto;
+  align-self: flex-end;
+  cursor: pointer;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+button:hover {
+  background: #950d16;
+  color: white;
+}
+.book .action {
+  display: flex;
+  margin-top: 10px;
+}
+.book button {
+  padding: 10px;
+  margin-right: 5px;
+  cursor: pointer;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.book button:hover {
+  background-color: #00ffff;
+  color: white;
+}
+.book .action .belum-selesai-dibaca {
+  background-color: #00bfff;
+  color: white;
+}
+.book .action .belum-selesai-dibaca:hover {
+  background-color: #2980b9;
+}
+
+.book .action .selesai-dibaca {
+  background-color: #008b8b;
+  color: white;
+}
+
+.book .action .selesai-dibaca:hover {
+  background-color: #016161;
+}
+
+.book .action .delete {
+  background-color: #dc143c;
+  color: white;
+}
+
+.book .action .delete:hover {
+  background-color: #ac0224;
+}
+
+.book .action .edit {
+  background-color: #778899;
+  color: white;
+}
+
+.book .action .edit:hover {
+  background-color: #596672;
+}
+
+.btn-submit {
+  width: fit-content;
+  font-family: "Fira Sans", sans-serif;
+  border-radius: 16px;
+  padding: 12px 24px;
+  background-color: #d21e2b;
+  color: white;
+  font-size: 18px;
+  margin-top: auto;
+  align-self: flex-end;
+  cursor: pointer;
+}
+.btn-submit:hover {
+  background: #950d16;
+  color: white;
+}
+input[type="text"],
+input[type="date"],
+input[type="number"],
+.btn-submit:focus {
+  outline: none;
+}
+.text-center {
+  text-align: center;
+}
+.toast {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #4caf50;
+  color: #fff;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+}
+.toast.error {
+  background-color: #f44336;
+}
+@media only screen and (max-width: 1024px) {
+  .wrapper {
+    margin: 0;
+  }
+
+  .wrapper .container {
+    width: 100%;
+  }
+
+  .book {
+    width: 100%;
+  }
+
+  .form {
+    width: 100%;
+  }
+}
